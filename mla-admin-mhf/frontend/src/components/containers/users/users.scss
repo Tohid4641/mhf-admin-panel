@@ -1,0 +1,88 @@
+// .bt-pd{
+//     padding-bottom: 20px;
+// }
+
+// .social-icon{
+//     padding-top: 10px; ;
+// }
+
+.mla-users {
+  // .table td, .table th{
+
+  // 	padding: .50rem !important;
+
+  // }
+  .table th {
+    font-weight: 600;
+    color: grey;
+  }
+  .react-bs-table-pagination .react-bootstrap-table-page-btns-ul {
+    float: right;
+  }
+  .table-bordered td:nth-child(1),
+  .table-bordered th:nth-child(1),
+  .table-bordered thead td:nth-child(1),
+  .table-bordered thead th:nth-child(1) {
+    width: 8%;
+  }
+  .table-bordered td:nth-child(2),
+  .table-bordered th:nth-child(2),
+  .table-bordered thead td:nth-child(2),
+  .table-bordered thead th:nth-child(2) {
+    width: 30%;
+  }
+  .table-bordered td:nth-child(3),
+  .table-bordered th:nth-child(3),
+  .table-bordered thead td:nth-child(3),
+  .table-bordered thead th:nth-child(3) {
+    width: 20%;
+  }
+  .table-bordered td:nth-child(4),
+  .table-bordered th:nth-child(4),
+  .table-bordered thead td:nth-child(4),
+  .table-bordered thead th:nth-child(4) {
+    width: 42%;
+  }
+  .react-bs-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .react-bs-table .table {
+    table-layout: fixed;
+  }
+
+  // // .datatable-wrapper .datatable tbody tr {
+  // //     background-color: #edf2f7;
+  // // }
+  // .table-striped tbody tr:nth-of-type(odd) {
+  // 	background-color: #edf2f7;
+  // 	border: 0.5px solid lightblue;
+  // }
+
+  // // .table-hover tbody tr:hover {
+  // //     color: #212529;
+  // //     background-color:lightblue;
+  // // }
+
+  // .table-bordered td, .table-bordered th {
+  // 	 border: none;
+  // 	 text-align: center;
+  // }
+  .card {
+    border: none;
+    border-radius: 1.25rem;
+  }
+  // .react-bs-table table tr td, .react-bs-table table tr th{
+  // 	white-space: nowrap;
+  // 	border: none;
+  // }
+  // @media (max-width:575px){
+  // 	.react-bs-table-pagination .react-bootstrap-table-page-btns-ul{
+  // 		float: none;
+  // 		justify-content: center;
+  // 		margin-top: 15px;
+  // 	}
+  // }
+}

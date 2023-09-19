@@ -1,0 +1,246 @@
+.mla-projects {
+  .card {
+    border: none;
+    border-radius: 1.25rem;
+  }
+  .table-header-wrapper {
+    display: none;
+  }
+
+  .mlac-search-container {
+    margin: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .react-bootstrap-table-page-btns-ul {
+    float: right;
+  }
+
+  .mlac-refresh {
+    cursor: pointer;
+    float: right;
+  }
+
+  .mlac-status-filter,
+  .mlac-search {
+    max-width: 350px;
+    margin-left: auto;
+  }
+
+  .mlac-each {
+    box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.32);
+    width: 100%;
+    height: auto;
+    float: left;
+    border-radius: 5px;
+    margin: 5px 0;
+    text-decoration: none;
+
+    &:hover {
+      color: #333;
+    }
+
+    .mlace-head {
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #3a4462;
+      color: white;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+
+      span {
+        padding: 0 10px;
+
+        &.mlac-status {
+          display: flex;
+          align-items: center;
+        }
+
+        &.mlacer-date {
+          margin-left: auto;
+        }
+
+        &.status-pending {
+          background-color: #d64343;
+          color: white;
+          border-radius: 5px;
+        }
+
+        &.status-inprogress {
+          background-color: #42b9df;
+          color: white;
+          border-radius: 5px;
+        }
+
+        &.status-closed {
+          background-color: #29d263;
+          color: white;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .mlac-edit {
+      margin-right: 10px;
+    }
+
+    .mlace-content {
+      padding: 15px;
+      float: left;
+    }
+  }
+
+  .date-filter {
+    text-align: right;
+    margin-bottom: 10px;
+
+    .DateInput {
+      border-radius: 4px;
+    }
+
+    .DateInput_input {
+      line-height: 1.1rem;
+      font-size: 1rem;
+      padding: 0 10px;
+      height: 35px;
+      border-radius: 5px;
+      border: 1px solid white;
+    }
+
+    .DateRangePickerInput {
+      border-color: hsl(0, 0%, 80%);
+      border-radius: 4px;
+    }
+  }
+
+  .table {
+    border: none;
+
+    td {
+      border: none;
+      padding: 0;
+      background-color: white;
+    }
+  }
+}
+
+// .table td, .table th{
+
+// 	padding: .50rem !important;
+
+// }
+// .table th {
+// 	font-weight: 600;
+// 	color: grey;
+// }
+// .react-bs-table-pagination .react-bootstrap-table-page-btns-ul {
+//     float:right;
+// }
+// .table-bordered td:nth-child(1), .table-bordered th:nth-child(1),
+// .table-bordered thead td:nth-child(1), .table-bordered thead th:nth-child(1){
+// 	width: 8%;
+// }
+// .table-bordered td:nth-child(2), .table-bordered th:nth-child(2),
+// .table-bordered thead td:nth-child(2), .table-bordered thead th:nth-child(2){
+// 	width: 30%;
+// }
+// .table-bordered td:nth-child(3), .table-bordered th:nth-child(3),
+// .table-bordered thead td:nth-child(3), .table-bordered thead th:nth-child(3){
+// 	width: 20%;
+// }
+// .table-bordered td:nth-child(4), .table-bordered th:nth-child(4),
+// .table-bordered thead td:nth-child(4), .table-bordered thead th:nth-child(4){
+// 	width: 42%;
+// }
+// .react-bs-table{
+// 	display: block;
+//     width: 100%;
+//     overflow-x: auto;
+//     -webkit-overflow-scrolling: touch;
+// }
+// .react-bs-table .table{
+// 	table-layout: fixed;
+// 	border-left-style: hidden;
+// 	border-right-style: hidden;
+// 	border-bottom-style: hidden;
+
+// }
+
+// // .datatable-wrapper .datatable tbody tr {
+// //     background-color: #edf2f7;
+// // }
+// .table-striped tbody tr:nth-of-type(odd) {
+// 	background-color: #edf2f7;
+// 	border: 0.5px solid lightblue;
+// }
+
+// // .table-hover tbody tr:hover {
+// //     color: #212529;
+// //     background-color:lightblue;
+// // }
+
+// .table-bordered td, .table-bordered th {
+// 	 border: none;
+// 	 text-align: center;
+// }
+
+// .react-bs-table table tr td, .react-bs-table table tr th{
+// 	white-space: nowrap;
+// 	border: none;
+// }
+// @media (max-width:575px){
+// 	.react-bs-table-pagination .react-bootstrap-table-page-btns-ul{
+// 		float: none;
+// 		justify-content: center;
+// 		margin-top: 15px;
+// 	}
+// }
+
+.modal {
+  // margin-top: 0px !important;
+  // margin-left: 0px !important;
+  margin-top: 50px !important;
+  margin-left: 33% !important;
+  background: rgba(0, 0, 0, 0);
+  width: 34vw !important;
+}
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-content {
+  border: 0px solid rgba(0, 0, 0, 0.2);
+}
+.modal-footer {
+  border-top: 1px solid #253c80;
+}
+
+.modal-header .close {
+  color: #ffff;
+}
+
+.modal-header {
+  border-radius: 0;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-footer {
+  padding: 0.4rem;
+}
+
+.modal-header {
+  border-radius: 0;
+}
+
+.modal-content {
+  border-radius: 0.3rem;
+}
+
+.modal-footer {
+  padding: 0.4rem;
+}

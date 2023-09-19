@@ -1,0 +1,81 @@
+.mla-complaints-details {
+  .malac-by {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  .mlac-change-statue {
+    z-index: 999;
+  }
+
+  .initial_loading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .carousel-root {
+    max-width: 700px;
+    margin: auto;
+
+    .thumbs-wrapper {
+      display: none;
+    }
+  }
+
+  .alignment {
+    padding: 10px;
+  }
+
+  .secondary {
+    color: #c2c2a3;
+    padding: 10px 5 px;
+  }
+
+  // .bb{
+  //     border-bottom: 1px solid #ccc;
+  //     position: absolute;
+  //     width: calc(100% - 20px);
+  //     bottom: 0;
+  // }
+
+  .br {
+    border-right: 1px solid #ccc;
+    position: absolute;
+    height: calc(100%);
+    right: 0;
+  }
+
+  .material-icons.md-24 {
+    font-size: 18px;
+    margin-top: 4px;
+    color: cornflowerblue;
+  }
+
+  .complaint_status_track {
+    max-width: 300px;
+    justify-content: center;
+
+    .card {
+      border: none;
+    }
+  }
+
+  .complaint-status-card {
+    margin-top: 20px;
+
+    > .container {
+      > div {
+        &:last-child {
+          .br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

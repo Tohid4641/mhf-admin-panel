@@ -1,0 +1,16 @@
+.mla-home .fa-hospital-o {
+  color: #0000ff;
+}
+.mla-home .fa-calendar-o {
+  color: #ff944d;
+}
+.mla-home .fa-user-md {
+  color: #0000ff;
+}
+.mla-home .fa-user-o {
+  color: #4dff4d;
+}
+.mla-home .tiles-link:hover {
+  color: #000;
+  text-decoration: none;
+}

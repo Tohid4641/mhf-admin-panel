@@ -1,0 +1,70 @@
+.doctor-details {
+  .section-heading {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  .rejected-text {
+    color: red;
+    display: block;
+    margin: 0px 0px 20px 0px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  .padding-top {
+    padding-top: 20px;
+  }
+  .image-div {
+    padding: 5px 0px 10px 0px;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+  }
+  .profile-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    img {
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+  }
+  table {
+    border-collapse: collapse;
+    overflow: hidden;
+    width: 100%;
+  }
+  thead {
+    color: #fff;
+    background: #0059a3;
+  }
+  table.table th {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  tbody td {
+    border-bottom: 0.1px dashed grey !important;
+    border-top: 0.1px dashed grey !important;
+  }
+  .table th {
+    border-bottom: 0.1px dashed grey !important;
+  }
+  th,
+  td {
+    padding: 10px 5px 10px 5px !important;
+    font-weight: 600;
+    border: 2px solid #e2e8f0;
+    width: 50%;
+  }
+
+  .adhaar-election-img {
+    img {
+      height: 110px;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.mla-mail-prepare {
+}
+
+.mail-modal {
+  .modal {
+    margin-top: 0px;
+    margin-left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: visibility 0s linear 0.2s, opacity 0.2s 0s;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  .modal {
+    // margin-top: 0px !important;
+    // margin-left: 0px !important;
+    // margin-top: 15% !important;
+    // margin-left: 30% !important;
+    background: rgba(0, 0, 0, 0);
+    // width: 34vw !important;
+  }
+  .modal-body {
+    padding: 2rem;
+  }
+
+  .modal-content {
+    border: 0px solid rgba(0, 0, 0, 0.2);
+  }
+  .modal-footer {
+    border-top: 1px solid #253c80;
+  }
+
+  .modal-header .close {
+    color: #ffff;
+  }
+
+  .modal-content {
+    border-radius: 0.3rem;
+  }
+
+  .modal-footer {
+    padding: 0.4rem;
+  }
+  .modal-dialog {
+    max-width: 646px;
+  }
+}
+
+.modal {
+  margin: auto;
+}

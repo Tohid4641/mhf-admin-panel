@@ -1,0 +1,9 @@
+{
+    "dev": true,
+    "appName": "MLA",
+    "api": "https://dezensolutions.com/mhf_apis/api/",
+    "fileBasicPath": "https://dezensolutions.com/apis/mhf/uploads/",
+    "projectPath": "https://dezensolutions.com/apis/mhf/",
+    "maintenance": false,
+    "s3BasicPath": "https://mla-storage.s3.ap-south-1.amazonaws.com/"
+}

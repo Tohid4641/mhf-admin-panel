@@ -1,0 +1,49 @@
+.aboutUs {
+  .logo-img-section {
+    margin: 25px 0px 25px 0px;
+
+    .logo-image {
+      max-height: 156px;
+      width: 350px;
+    }
+  }
+  .heading-text {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+    color: #253c80;
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .icon-seciton {
+    text-align: right;
+    .fa {
+      font-size: 20px;
+      color: #253c80;
+      margin: 0px 0px 20px 0px;
+    }
+  }
+  .text-section {
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  @media (max-width: 599px) {
+    .px-5 {
+      margin: 0px !important;
+      padding: 0px !important;
+    }
+    .intro-y.news.p-5.box.mt-8 {
+      margin: 0px;
+      padding: 0px !important;
+    }
+    .icon-seciton {
+      text-align: left !important;
+      .fa {
+        font-size: 20px;
+        color: #253c80;
+        margin: 15px 0px 20px 0px !important;
+      }
+    }
+  }
+}

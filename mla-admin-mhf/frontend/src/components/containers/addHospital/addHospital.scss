@@ -1,0 +1,286 @@
+.add-hospital {
+  .error {
+    color: red;
+    font-size: 0.8rem;
+  }
+  .inner-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+  // / TimeLine Start /
+  .timeline {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .li {
+    transition: all 200ms ease-in;
+  }
+  .timestamp {
+    margin-bottom: 20px;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 100;
+  }
+  .status {
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #d6dce0;
+    position: relative;
+    transition: all 200ms ease-in;
+  }
+  .status h4 {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .status .numberCircle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background: #fff;
+    border: 2px solid #666;
+    // color: #666;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .timestamp span {
+    font-size: 15px;
+  }
+  .status:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: -7px;
+    left: 42%;
+    transition: all 200ms ease-in;
+  }
+
+  .li.complete .status {
+    border-top: 2px solid rgba(129, 37, 111, 1);
+  }
+  .li.complete .status:before {
+    background-color: #253c80;
+    border: none;
+    transition: all 200ms ease-in;
+  }
+  .li.complete .status h4 {
+    color: #253c80;
+    font-size: 16px;
+  }
+  .li.complete .status .numberCircle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background: #fff;
+    border: 2px solid #253c80;
+    // color: #666;
+    color: #253c80;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+  }
+  //  TimeLine End ..//
+  .section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+  .custom-file-profile {
+    // border: 1px solid #ccc;
+    // display: inline-block;
+    // padding: 6px 12px;
+    // cursor: pointer;
+    // border-radius: 8px;
+    // width: 35%;
+  }
+  .image-div {
+    padding: 5px 0px 10px 0px;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+  }
+  .profile-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    display: flex;
+    overflow: hidden;
+    // border: 1px solid #f75d34;
+    justify-content: center;
+    img {
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+  }
+  .btn-div {
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .authentication-loading {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .form-check-label {
+    div {
+      display: inline-block;
+      margin-right: 5px;
+    }
+    input[type='radio'] {
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+  input {
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+  }
+
+  input[type='file'] {
+    display: none;
+  }
+  .adhaar-election-img {
+    img {
+      height: 110px;
+      object-fit: cover;
+    }
+  }
+  #mlafile input[type='file'] {
+    display: block;
+  }
+  .display-block {
+    display: block;
+  }
+  .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 35%;
+  }
+  .custom-file-upload-screen {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    // width: 100%;
+  }
+  .circle-icon {
+    color: #253c80;
+    cursor: pointer;
+    border: 1px solid #253c80;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .circle-icon-close {
+    color: #253c80;
+    cursor: pointer;
+    border: 1px solid #253c80;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .add-other-service-icon {
+    padding: 5px;
+    color: #70af85;
+    cursor: pointer;
+    font-size: 18px !important;
+    margin-left: 6px;
+    margin-top: -7px;
+  }
+  .gender-radio {
+    .form-group {
+      display: inline;
+      margin: 0px 0px 0px 10px;
+      input[type='radio'] {
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+  .membership-plan-section {
+    padding-top: 35px;
+    max-height: 275px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    li.nav-item {
+      text-align: center;
+      margin: 0px 0px 25px 0px;
+    }
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs span.active {
+      cursor: pointer;
+      align-items: center;
+      padding: 1.3rem 1.3rem 1.3rem 1.3rem !important;
+      border-radius: 5px;
+      font-weight: 700;
+      border: 1px solid #253c80 !important;
+    }
+    .nav-tabs {
+      display: block;
+      span {
+        padding: 1.3rem 1.3rem 1.3rem 1.3rem !important;
+        display: block;
+        cursor: pointer;
+        font-weight: 600;
+        border: 1px solid #dde5eb;
+        border-radius: 5px;
+        .plan-heading-text {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 0;
+        }
+        .plan-small-text {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 0;
+          font-size: 12px;
+        }
+      }
+    }
+    .nav-tabs {
+      border-bottom: none !important;
+    }
+  }
+
+  @media (max-width: 599px) {
+    .p-5 {
+      padding: 1rem !important;
+    }
+    .icon-section {
+      margin: 0px 0px 10px 0px;
+    }
+  }
+}

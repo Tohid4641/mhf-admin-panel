@@ -1,0 +1,608 @@
+{
+	"info": {
+		"_postman_id": "91dde3dd-84c6-4544-b193-fd1a1a9e0fcd",
+		"name": "mhf",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add_doctor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "8978768207",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMyNDNlZmI5ZjU2NDljZDc0NmY4NWIiLCJmdWxsTmFtZSI6ImJhc2hhIiwibW9iaWxlTm8iOiI4OTc4NzY4MjA3IiwiY29uZmlybU9UUCI6IjI5MDUiLCJpYXQiOjE2NDEzMjg2MzQsImV4cCI6MTY0MTMzNTgzNH0.ovPu5-9o4gjd1ZEBpVta8qimwTO-74-ofoCGbU3Bm-k",
+							"type": "text"
+						},
+						{
+							"key": "name_of_doctor",
+							"value": "K Sravani Reddy",
+							"type": "text"
+						},
+						{
+							"key": "qualification",
+							"value": "BDS",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "Dental Surgeon, Cosmetic/Aesthetic Dentist",
+							"type": "text"
+						},
+						{
+							"key": "about_doctor",
+							"value": "Dr. K. Sravani is a cosmetic dental surgeon who does general dentistry practice in smilenglow dental & skin Hospital in kharkhana,Secunderabad.She completed B.D.S from sidhartha institute of dental sciences, vijayawada and internship from osmania dental hospital, Hyderabad. She has experience of 7 years & did fellowship in roatary endodontics & cosmetic dentistry and specialises in all basic and latest dental procedures including single sitting Rct, porcelain veneers, gum surgery, implants and many more.. She provides advance technologies like digital & portable X Ray, X smart which allows her to treat patient very quickly n comfortably. ",
+							"type": "text"
+						},
+						{
+							"key": "list_of_hospitals_working",
+							"value": "National Dental Care, Mythri Hospital",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/api/admin/add_doctor",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"admin",
+						"add_doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_doctor_by_id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "8978768207",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMyNDNlZmI5ZjU2NDljZDc0NmY4NWIiLCJmdWxsTmFtZSI6ImJhc2hhIiwibW9iaWxlTm8iOiI4OTc4NzY4MjA3IiwiY29uZmlybU9UUCI6IjI5MDUiLCJpYXQiOjE2NDEzMjg2MzQsImV4cCI6MTY0MTMzNTgzNH0.ovPu5-9o4gjd1ZEBpVta8qimwTO-74-ofoCGbU3Bm-k",
+							"type": "text"
+						},
+						{
+							"key": "doctor_id",
+							"value": "61d4c68e8531e0687cfe5c8f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/api/admin/get_doctor_by_id",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"admin",
+						"get_doctor_by_id"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_doctor_by_name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "8978768207",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMyNDNlZmI5ZjU2NDljZDc0NmY4NWIiLCJmdWxsTmFtZSI6ImJhc2hhIiwibW9iaWxlTm8iOiI4OTc4NzY4MjA3IiwiY29uZmlybU9UUCI6IjI5MDUiLCJpYXQiOjE2NDEzMjg2MzQsImV4cCI6MTY0MTMzNTgzNH0.ovPu5-9o4gjd1ZEBpVta8qimwTO-74-ofoCGbU3Bm-k",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Yugandh",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/api/admin/get_doctor_by_name",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"admin",
+						"get_doctor_by_name"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_doctor_details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "8978768207",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMyNDNlZmI5ZjU2NDljZDc0NmY4NWIiLCJmdWxsTmFtZSI6ImJhc2hhIiwibW9iaWxlTm8iOiI4OTc4NzY4MjA3IiwiY29uZmlybU9UUCI6IjI5MDUiLCJpYXQiOjE2NDEzMjg2MzQsImV4cCI6MTY0MTMzNTgzNH0.ovPu5-9o4gjd1ZEBpVta8qimwTO-74-ofoCGbU3Bm-k",
+							"type": "text"
+						},
+						{
+							"key": "name_of_doctor",
+							"value": "Yugandhar",
+							"type": "text"
+						},
+						{
+							"key": "qualification",
+							"value": "MDS - Periodontics, BDS",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "Dentist, Periodontist, Implantologist",
+							"type": "text"
+						},
+						{
+							"key": "about_doctor",
+							"value": "Dr. Badri Yugandhar is qualified MDS Periodontist and owns Dr. Yugandhar Superspeciality Dental Hospital located in Nayudupeta, Nellore. With his passion for Dentistry he has Opened the Chain of Dental Clinics in Name of National Dental Care in Hyderabad, Telangana. National Dental care presently serving in 2 locations across Hyderabad, One in KPHB and other in Madinaguda. Dr. Yugandhar, BDS MDS has over 20+ years of experience in Dentistry serving more than 10000 patients with different dental issues across the states of Andhra Pradesh, Telangana and Tamil Nadu.",
+							"type": "text"
+						},
+						{
+							"key": "list_of_hospitals_working",
+							"value": "National Dental Care, Mythri Hospital",
+							"type": "text"
+						},
+						{
+							"key": "doctor_id",
+							"value": "61d4bb514fdbf6646e7d4dcf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/api/admin/update_doctor_details",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"admin",
+						"update_doctor_details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_doctor_by_status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "8978768207",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMyNDNlZmI5ZjU2NDljZDc0NmY4NWIiLCJmdWxsTmFtZSI6ImJhc2hhIiwibW9iaWxlTm8iOiI4OTc4NzY4MjA3IiwiY29uZmlybU9UUCI6IjI5MDUiLCJpYXQiOjE2NDEzMjg2MzQsImV4cCI6MTY0MTMzNTgzNH0.ovPu5-9o4gjd1ZEBpVta8qimwTO-74-ofoCGbU3Bm-k",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "ACTIVE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/api/admin/get_doctor_by_status",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"admin",
+						"get_doctor_by_status"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_doctor_status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "8978768207",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMyNDNlZmI5ZjU2NDljZDc0NmY4NWIiLCJmdWxsTmFtZSI6ImJhc2hhIiwibW9iaWxlTm8iOiI4OTc4NzY4MjA3IiwiY29uZmlybU9UUCI6IjI5MDUiLCJpYXQiOjE2NDEzMjg2MzQsImV4cCI6MTY0MTMzNTgzNH0.ovPu5-9o4gjd1ZEBpVta8qimwTO-74-ofoCGbU3Bm-k",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "INACTIVE",
+							"type": "text"
+						},
+						{
+							"key": "doctor_id",
+							"value": "61d4c68e8531e0687cfe5c8f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/api/admin/update_doctor_status",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"admin",
+						"update_doctor_status"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_hospital",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "8978768207",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMyNDNlZmI5ZjU2NDljZDc0NmY4NWIiLCJmdWxsTmFtZSI6ImJhc2hhIiwibW9iaWxlTm8iOiI4OTc4NzY4MjA3IiwiY29uZmlybU9UUCI6IjI5MDUiLCJpYXQiOjE2NDEzMjg2MzQsImV4cCI6MTY0MTMzNTgzNH0.ovPu5-9o4gjd1ZEBpVta8qimwTO-74-ofoCGbU3Bm-k",
+							"type": "text"
+						},
+						{
+							"key": "name_of_hospital",
+							"value": "SmilenGlow Dental and Skin Hospital",
+							"type": "text"
+						},
+						{
+							"key": "what_kind_of_hospital",
+							"value": "Multi-Speciality Hospital",
+							"type": "text"
+						},
+						{
+							"key": "about_the_hospital",
+							"value": "We at Smile n Glow Dental and Skin Hospital, Karkhana provide all skin, hair and laser treatments, we do PRP, hair growth treatments, hair transplant, chemical peeling,acne, scar management, anti-aging treatments like botox and fillers, tattoo, wart removal, laser hair removal. In Dentistry, we have digital Xray, we do single sitting RCT, smile designing, implants, dentures, orthodontic corrections, veneers, composites, full mouth reconstruction. We are dedicated to provide all aesthetic procedures in our Hospital.",
+							"type": "text"
+						},
+						{
+							"key": "address_of_hospital",
+							"value": "Plot Number 177, 3rd Floor, Ritesh Premier Towers, above santosh dhaba\nLandmark: Opposite Karkhana Police Station and Above Santosh Dhabha\nKarkhana, Hyderabad",
+							"type": "text"
+						},
+						{
+							"key": "list_of_services_the_hospital_provides",
+							"value": "[\"Ceramic Veneers / Crowns\", \"Tooth Extraction\"]",
+							"type": "text"
+						},
+						{
+							"key": "timings_of_hospital",
+							"value": "Mon - Sat 08:00 AM - 08:30 PM",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/api/admin/add_hospital",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"admin",
+						"add_hospital"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_hospital_by_id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "8978768207",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMyNDNlZmI5ZjU2NDljZDc0NmY4NWIiLCJmdWxsTmFtZSI6ImJhc2hhIiwibW9iaWxlTm8iOiI4OTc4NzY4MjA3IiwiY29uZmlybU9UUCI6IjI5MDUiLCJpYXQiOjE2NDEzMjg2MzQsImV4cCI6MTY0MTMzNTgzNH0.ovPu5-9o4gjd1ZEBpVta8qimwTO-74-ofoCGbU3Bm-k",
+							"type": "text"
+						},
+						{
+							"key": "hospital_id",
+							"value": "61d56bd488bc5e72e64fa5e4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/api/admin/get_hospital_by_id",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"admin",
+						"get_hospital_by_id"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_hospital_profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "8978768207",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMyNDNlZmI5ZjU2NDljZDc0NmY4NWIiLCJmdWxsTmFtZSI6ImJhc2hhIiwibW9iaWxlTm8iOiI4OTc4NzY4MjA3IiwiY29uZmlybU9UUCI6IjI5MDUiLCJpYXQiOjE2NDEzMjg2MzQsImV4cCI6MTY0MTMzNTgzNH0.ovPu5-9o4gjd1ZEBpVta8qimwTO-74-ofoCGbU3Bm-k",
+							"type": "text"
+						},
+						{
+							"key": "name_of_hospital",
+							"value": "SmilenGlow Dental and Skin Hospital",
+							"type": "text"
+						},
+						{
+							"key": "what_kind_of_hospital",
+							"value": "Multi-Speciality Hospital",
+							"type": "text"
+						},
+						{
+							"key": "about_the_hospital",
+							"value": "We at Smile n Glow Dental and Skin Hospital, Karkhana provide all skin, hair and laser treatments, we do PRP, hair growth treatments, hair transplant, chemical peeling,acne, scar management, anti-aging treatments like botox and fillers, tattoo, wart removal, laser hair removal. In Dentistry, we have digital Xray, we do single sitting RCT, smile designing, implants, dentures, orthodontic corrections, veneers, composites, full mouth reconstruction. We are dedicated to provide all aesthetic procedures in our Hospital.",
+							"type": "text"
+						},
+						{
+							"key": "address_of_hospital",
+							"value": "Plot Number 177, 3rd Floor, Ritesh Premier Towers, above santosh dhaba\nLandmark: Opposite Karkhana Police Station and Above Santosh Dhabha\nKarkhana, Hyderabad",
+							"type": "text"
+						},
+						{
+							"key": "list_of_services_the_hospital_provides",
+							"value": "[\"Ceramic Veneers / Crowns\", \"Tooth Extraction\"]",
+							"type": "text"
+						},
+						{
+							"key": "timings_of_hospital",
+							"value": "Mon - Sat 08:00 AM - 08:30 PM",
+							"type": "text"
+						},
+						{
+							"key": "hospital_id",
+							"value": "61d56bd488bc5e72e64fa5e4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/api/admin/update_hospital_profile",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"admin",
+						"update_hospital_profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_hospital_by_status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "8978768207",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMyNDNlZmI5ZjU2NDljZDc0NmY4NWIiLCJmdWxsTmFtZSI6ImJhc2hhIiwibW9iaWxlTm8iOiI4OTc4NzY4MjA3IiwiY29uZmlybU9UUCI6IjI5MDUiLCJpYXQiOjE2NDEzMjg2MzQsImV4cCI6MTY0MTMzNTgzNH0.ovPu5-9o4gjd1ZEBpVta8qimwTO-74-ofoCGbU3Bm-k",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "ACTIVE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/api/admin/get_hospital_by_status",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"admin",
+						"get_hospital_by_status"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_hospital_status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "8978768207",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMyNDNlZmI5ZjU2NDljZDc0NmY4NWIiLCJmdWxsTmFtZSI6ImJhc2hhIiwibW9iaWxlTm8iOiI4OTc4NzY4MjA3IiwiY29uZmlybU9UUCI6IjI5MDUiLCJpYXQiOjE2NDEzMjg2MzQsImV4cCI6MTY0MTMzNTgzNH0.ovPu5-9o4gjd1ZEBpVta8qimwTO-74-ofoCGbU3Bm-k",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "ACTIVE",
+							"type": "text"
+						},
+						{
+							"key": "hospital_id",
+							"value": "61d56bd488bc5e72e64fa5e4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/api/admin/update_hospital_status",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"admin",
+						"update_hospital_status"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,86 @@
+.mla-profile {
+  .error {
+    color: red;
+    font-size: 0.8rem;
+  }
+
+  .authentication-loading {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  input {
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+  }
+
+  input[type='file'] {
+    display: none;
+  }
+
+  .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+
+  .eachsocial {
+    display: flex;
+    .eachSocialLink {
+      margin-left: 10px;
+    }
+
+    .social-edit {
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+  }
+}
+
+.social-media-modal {
+  // max-width: 35% !important;
+  .modal-content {
+    // padding: 20px 28px;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+  }
+  .design-modal-header {
+    // border: none !important;
+    background-color: #1d3faa;
+    margin: 0 !important;
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+    color: white !important;
+    .close {
+      outline: none !important;
+      font-size: 30px;
+      padding: 12px;
+      color: white;
+    }
+    p {
+      margin: 0 !important;
+      font-family: roboto-medium !important;
+      font-size: 18px;
+    }
+  }
+  .error,
+  errormsg {
+    color: red;
+    font-size: 0.8rem;
+  }
+
+  .form-error {
+    color: red;
+  }
+  .submit-login {
+    background-color: #1d3faa !important;
+    border-color: #1d3faa !important;
+    border-radius: 6px;
+  }
+  .delete-btn {
+    background-color: #1d3faa !important;
+    border-color: #1d3faa !important;
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,54 @@
+.mla-settings {
+  .u-modal {
+    width: 50% !important;
+  }
+
+  .font-medium {
+    font-style: normal;
+    font-weight: bold;
+  }
+  .font-large {
+    font-weight: bolder;
+    font-size: 18px;
+  }
+  .grey {
+    color: darkgrey !important;
+    font-weight: bolder;
+  }
+
+  .token {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .text-info {
+    color: #33bbff !important;
+  }
+  .reset-b {
+    background: #33bbff;
+    border: none !important;
+    font-weight: bolder;
+    width: 140px;
+    height: 46px;
+  }
+  .modal-header .close {
+    color: black;
+  }
+
+  .modal-dialog {
+    max-width: 580px;
+    margin: 1.75rem auto;
+  }
+}
+
+.modal {
+  margin-top: 20px !important;
+  margin-left: 0 !important;
+  background: none !important;
+  transition: visibility 0s linear 0.2s, opacity 0.2s 0s;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}

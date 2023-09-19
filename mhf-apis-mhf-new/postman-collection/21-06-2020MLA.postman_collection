@@ -1,0 +1,3090 @@
+{
+	"info": {
+		"_postman_id": "42c8d51e-7fb4-4a5d-b79b-e9668a623fbd",
+		"name": "MLA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "firebased_send_notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "msgTitle",
+							"value": "hi",
+							"type": "text"
+						},
+						{
+							"key": "msgBody",
+							"value": "hello",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/firebased/send_notification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"firebased",
+						"send_notification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_send_otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://35.247.146.180:3000/api/user/send_otp",
+					"protocol": "http",
+					"host": [
+						"35",
+						"247",
+						"146",
+						"180"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"send_otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_send_otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/send_otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"send_otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "otp",
+							"value": "4087",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://35.247.146.180:3000/api/user/login",
+					"protocol": "http",
+					"host": [
+						"35",
+						"247",
+						"146",
+						"180"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "file_file_upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/ADMIN/Downloads/KSIGN.jpeg"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/ADMIN/Downloads/KARSINTER.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/file/file_upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"file",
+						"file_upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"mobileNo\":\"\",\n\t\"otp\":\"999\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_update_profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "Hussain Bhasha",
+							"type": "text"
+						},
+						{
+							"key": "voterId",
+							"value": "D7890",
+							"type": "text"
+						},
+						{
+							"key": "userAddress",
+							"value": "KNL",
+							"type": "text"
+						},
+						{
+							"key": "userPhoto",
+							"value": "avatar.jpg",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "9eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/update_profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"update_profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_insert_complaint",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						},
+						{
+							"key": "complaintTitle",
+							"value": "Ct2",
+							"type": "text"
+						},
+						{
+							"key": "complaintDescription",
+							"value": "cd",
+							"type": "text"
+						},
+						{
+							"key": "complaintLocation",
+							"value": "KNL",
+							"type": "text"
+						},
+						{
+							"key": "complaintDepartmentName",
+							"value": "5e9eb30a0d103c3b04be38b2",
+							"type": "text"
+						},
+						{
+							"key": "complaintFileNames",
+							"value": "avatar.jpg",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/insert_complaint",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"insert_complaint"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_complaint_update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						},
+						{
+							"key": "complaintTitle",
+							"value": "Ct2",
+							"type": "text"
+						},
+						{
+							"key": "complaintDescription",
+							"value": "cd",
+							"type": "text"
+						},
+						{
+							"key": "complaintLocation",
+							"value": "KTP",
+							"type": "text"
+						},
+						{
+							"key": "complaintId",
+							"value": "5e9f90a426b30e3f14841fdb",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/complaint_update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"complaint_update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_complaints",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/complaints",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"complaints"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_complaints_publish",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						},
+						{
+							"key": "complaintPublish",
+							"value": "Publish",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/complaints_publish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"complaints_publish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_complaints",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "complaintStatus",
+							"value": "Accepted",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/complaints",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"complaints"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_complaints_count",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "complaintStatus",
+							"value": "All2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/complaints_counts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"complaints_counts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_complaints_filter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "complaintStatus",
+							"value": "All",
+							"type": "text"
+						},
+						{
+							"key": "published",
+							"value": "All",
+							"type": "text"
+						},
+						{
+							"key": "dateFrom",
+							"value": "2020-01-01",
+							"type": "text"
+						},
+						{
+							"key": "dateTo",
+							"value": "2020-10-01",
+							"type": "text"
+						},
+						{
+							"key": "complaintDepartmentName",
+							"value": "All",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/complaints_filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"complaints_filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_complaint",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "complaintId",
+							"value": "5eef7cb27df85e1918bc5a28",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/complaint",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"complaint"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_complaint_number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "complaintNumber",
+							"value": "2020060271838",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/complaint_number",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"complaint_number"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_complaint_update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "complaintId",
+							"value": "5e9f90a426b30e3f14841fdb",
+							"type": "text"
+						},
+						{
+							"key": "complaintReplyDescription",
+							"value": "Repdesc",
+							"type": "text"
+						},
+						{
+							"key": "complaintStatus",
+							"value": "Accepted",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/complaint_update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"complaint_update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_complaint_update_publish",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "complaintId",
+							"value": "5e9f90a426b30e3f14841fdb",
+							"type": "text"
+						},
+						{
+							"key": "complaintPublish",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/complaint_update_publish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"complaint_update_publish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_complaint",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						},
+						{
+							"key": "complaintId",
+							"value": "5eef7cb27df85e1918bc5a28",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/complaint",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"complaint"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_complaint_number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						},
+						{
+							"key": "complaintNumber",
+							"value": "2020051014115",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/complaint_number",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"complaint_number"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_mla_update_profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590045",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "Hussain Bhasha",
+							"type": "text"
+						},
+						{
+							"key": "qualification",
+							"value": "MCA",
+							"type": "text"
+						},
+						{
+							"key": "aboutMLA",
+							"value": "KNL",
+							"type": "text"
+						},
+						{
+							"key": "mlaPhoto",
+							"value": "avatar.jpg",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/update_mla_profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"update_mla_profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_insert_dept",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "departmentName",
+							"value": "Muncipal",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/insert_dept",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"insert_dept"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_insert_album",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "albumTitle",
+							"value": "Muncipal",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "albumFiles",
+							"value": "[ava2.jpg]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/insert_album",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"insert_album"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_update_album",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "albumTitle",
+							"value": "Muncipals",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "albumFiles",
+							"value": "[ava2.jpg]",
+							"type": "text"
+						},
+						{
+							"key": "albumId",
+							"value": "5ec1ebad1a541e29b03e3446",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/update_album",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"update_album"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_update_album_status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "albumstatus",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "albumId",
+							"value": "5ec1ebad1a541e29b03e3446",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/update_album_status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"update_album_status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_insert_socialmedia_linking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "socialMediaType",
+							"value": "Face Book",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "socialMediaTypeUrl",
+							"value": "www.facebook,com/mla",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/insert_socialmedia_linking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"insert_socialmedia_linking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_insert_event_project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "eventProjectName",
+							"value": "Muncipal",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectPlace",
+							"value": "KNL",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectDate",
+							"value": "2020-05-21",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectDescription",
+							"value": "Descr",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectType",
+							"value": "Event",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectFileNames",
+							"value": "avatar.jpg",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectNameLang",
+							"value": "el",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectPlaceLang",
+							"value": "ep",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectDescriptionLang",
+							"value": "el",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/insert_event_project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"insert_event_project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_insert_contact_number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "Shaik",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Hussain",
+							"type": "text"
+						},
+						{
+							"key": "mobileNo",
+							"value": "9700273944",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "WEDS",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "BHASHAHUSSAIN@GMAIL.COM",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "KNL",
+							"type": "text"
+						},
+						{
+							"key": "profilePhoto",
+							"value": "avatar.jpg",
+							"type": "text"
+						},
+						{
+							"key": "headOfService",
+							"value": "headOfService",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/insert_contact_number",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"insert_contact_number"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_update_contact_number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "Shaik",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Hussain",
+							"type": "text"
+						},
+						{
+							"key": "mobileNo",
+							"value": "9700273944",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "WEDS",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "BHASHAHUSSAIN@GMAIL.COM",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "KNL",
+							"type": "text"
+						},
+						{
+							"key": "profilePhoto",
+							"value": "avatar.jpg",
+							"type": "text"
+						},
+						{
+							"key": "headOfService",
+							"value": "headOfService",
+							"type": "text"
+						},
+						{
+							"key": "contactNumberId",
+							"value": "5e9f03369cebdc14d4b550b3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/update_contact_number",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"update_contact_number"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_update_event_project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "eventProjectName",
+							"value": "Muncipals",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectPlace",
+							"value": "KNL",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectDate",
+							"value": "2020-05-21",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectDescription",
+							"value": "Descr",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectType",
+							"value": "Project",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectId",
+							"value": "5e9ec9e9068f612e742a5c78",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectNameLang",
+							"value": "elu",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectPlaceLang",
+							"value": "epu",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectDescriptionLang",
+							"value": "elu",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/update_event_project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"update_event_project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_update_event_project_status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "status",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectId",
+							"value": "5e9ec9e9068f612e742a5c78",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/update_event_project_status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"update_event_project_status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_events_projects",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectType",
+							"value": "Event",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/events_projects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"events_projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_events_projects_status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectType",
+							"value": "Project",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "false",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/events_projects_status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"events_projects_status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_events_projects_counts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectType",
+							"value": "Event",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/events_projects_counts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"events_projects_counts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_events_projects_filter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectType",
+							"value": "Event",
+							"type": "text"
+						},
+						{
+							"key": "dateFrom",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "dateTo",
+							"value": "2020-10-01",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/events_projects_filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"events_projects_filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_users_counts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/users_counts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"users_counts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_contact_numbers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/contact_numbers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"contact_numbers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_contact_numbers_headofservice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/contact_numbers_headofservice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"contact_numbers_headofservice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_social_media_linkings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/social_media_linkings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"social_media_linkings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_social_media_linking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "socialMediaLinkingId",
+							"value": "5e9f889143f7233b94d954eb",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/social_media_linking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"social_media_linking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_social_media_linking_update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "socialMediaLinkingId",
+							"value": "5e9f889143f7233b94d954eb",
+							"type": "text"
+						},
+						{
+							"key": "socialMediaType",
+							"value": "twitter",
+							"type": "text"
+						},
+						{
+							"key": "socialMediaTypeUrl",
+							"value": "twitter.com/mla",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/social_media_linking_update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"social_media_linking_update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_contact_number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "contactNumberId",
+							"value": "5e9f03369cebdc14d4b550b3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/contact_number",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"contact_number"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_contact_number_remove",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "contactNumberId",
+							"value": "5e9f03369cebdc14d4b550b3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/contact_number_remove",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"contact_number_remove"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_event_project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectId",
+							"value": "5e9ec9e9068f612e742a5c78",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/event_project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"event_project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_event_project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						},
+						{
+							"key": "mobileNo",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectId",
+							"value": "5ea41c960874b72f346388df",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/event_project",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"event_project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_insert_sub_dept",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "subDepartmentName",
+							"value": "Muncipal",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "departmentId",
+							"value": "5e9eb30a0d103c3b04be38b2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/insert_sub_dept",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"insert_sub_dept"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_update_sub_dept",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "subDepartmentName",
+							"value": "Muncipals",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "departmentId",
+							"value": "5e9eb30a0d103c3b04be38b2",
+							"type": "text"
+						},
+						{
+							"key": "subDepartmentId",
+							"value": "5e9eb3730d103c3b04be38b3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/update_sub_dept",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"update_sub_dept"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_depts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/depts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"depts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_albums",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/albums",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"albums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_albums_status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "albumstatus",
+							"value": "Active",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/albums_status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"albums_status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_album",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "albumId",
+							"value": "5ec1ebad1a541e29b03e3446",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/album",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"album"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_albums",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						},
+						{
+							"key": "mobileNo",
+							"value": "9553896106",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/albums",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"albums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_album",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						},
+						{
+							"key": "mobileNo",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "albumId",
+							"value": "5ec1ebad1a541e29b03e3446",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/album",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"album"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_depts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						},
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/depts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"depts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_sub_depts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "departmentId",
+							"value": "5e9eb30a0d103c3b04be38b2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/sub_depts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"sub_depts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_sub_dept",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "subDepartmentId",
+							"value": "5e9eb3730d103c3b04be38b3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/sub_dept",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"sub_dept"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_dept",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "departmentId",
+							"value": "5e9eb30a0d103c3b04be38b2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/dept",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"dept"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_update_dept",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "departmentId",
+							"value": "5e9eb30a0d103c3b04be38b2",
+							"type": "text"
+						},
+						{
+							"key": "departmentName",
+							"value": "Pension",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/update_dept",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"update_dept"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_mla_profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/mla_profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"mla_profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_mla_profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/mla_profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"mla_profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_event_projects",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectType",
+							"value": "Project",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/event_projects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"event_projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_event_projects_limits",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						},
+						{
+							"key": "eventProjectType",
+							"value": "Event",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/event_projects_limits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"event_projects_limits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_contact_numbers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/contact_numbers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"contact_numbers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_contact_numbers_headofservice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/contact_numbers_headofservice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"contact_numbers_headofservice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_contact_us",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/contact_us",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"contact_us"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_csocial_media_linkings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "9550590044",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllNWNjNDhiNmI4MzEzZDgyMjhmNjEiLCJtb2JpbGVObyI6Ijk1NTA1OTAwNDQiLCJpYXQiOjE1ODc0MzgxNTAsImV4cCI6MTYxODk3NDE1MH0.Yz9HAf--q50YnIznivxRt_vFM7sqyw7zqWKjyrOv840",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/social_media_linkings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"social_media_linkings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_contact_us",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/contact_us",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"contact_us"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_update_contact_us",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNoAdmin",
+							"value": "9553896106",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTllN2Q2NWQ3ZGM3MjNhZDQxMzNlNDciLCJtb2JpbGVObyI6Ijk1NTM4OTYxMDYiLCJjb25maXJtT1RQIjoiODQ1NyIsImlhdCI6MTU4NzQ0NTI5OCwiZXhwIjoxNjE4OTgxMjk4fQ.2KVMhcpnGdtecHvHRaeyX1TKZLKQzOBuAZG7RiWTvwg",
+							"type": "text"
+						},
+						{
+							"key": "mobileNo",
+							"value": "9553896105",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/admin/update_contact_us",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"update_contact_us"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
